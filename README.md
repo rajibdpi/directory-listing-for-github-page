@@ -1,16 +1,16 @@
 # Github Pages Directory Listing
 
-[![main](https://github.com/rajibdpi/github-pages-directory-listing/actions/workflows/main.yml/badge.svg)](https://github.com/rajibdpi/github-pages-directory-listing/actions/workflows/main.yml)
-[![license](https://img.shields.io/github/license/rajibdpi/github-pages-directory-listing)](https://github.com/rajibdpi/github-pages-directory-listing/blob/main/LICENSE)
+[![main](https://github.com/rajibdpi/github-page-directory-listing/actions/workflows/main.yml/badge.svg)](https://github.com/rajibdpi/github-page-directory-listing/actions/workflows/main.yml)
+[![license](https://img.shields.io/github/license/rajibdpi/github-page-directory-listing)](https://github.com/rajibdpi/github-page-directory-listing/blob/main/LICENSE)
 [![Paypal Donate](https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=plastic)](https://www.paypal.me/rajibdpi)
 
 Generate Directory Listings for Github Pages using Github Actions. 
 
 [Demo](https://github.com/rajibdpi/github-page-directory-listing#demo)
 
-[Read about pages deployment action](https://github.com/rajibdpi/github-pages-directory-listing/edit/main/README.md#note)
+[Read about pages deployment action](https://github.com/rajibdpi/github-page-directory-listing/edit/main/README.md#note)
 
-[action.yml/workflow.yml](https://github.com/rajibdpi/github-pages-directory-listing/blob/main/.github/workflows/main.yml)
+[action.yml/workflow.yml](https://github.com/rajibdpi/github-page-directory-listing/blob/main/.github/workflows/main.yml)
 
 ## Usage
 
@@ -33,7 +33,7 @@ jobs:
           ref: dummy-data    #checkout different branch
 
       - name: Generate Directory Listings
-        uses: rajibdpi/github-pages-directory-listing@v3.0.0
+        uses: rajibdpi/github-page-directory-listing@v3.0.0
         with:
           FOLDER: data      #directory to generate index
 
@@ -87,7 +87,7 @@ jobs:
 
 ```
       - name: Generate Directory Listings
-        uses: rajibdpi/github-pages-directory-listing@v2.0.0
+        uses: rajibdpi/github-page-directory-listing@v2.0.0
         with:
           FOLDER: data    #directory to generate index
 ```
@@ -103,7 +103,7 @@ Under `Settings > Pages > Build & Deployment`
 
 ## Demo
 
-demo URL: https://rajibdpi.github.io/github-pages-directory-listing/
+demo URL: https://rajibdpi.github.io/github-page-directory-listing/
 
 ### Desktop view
 
