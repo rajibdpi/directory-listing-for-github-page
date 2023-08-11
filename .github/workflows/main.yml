@@ -16,13 +16,13 @@ jobs:
       - name: Generate Directory Listings
         uses: rajibdpi/directory-listing-for-github-page@main
         with:
-          FOLDER: data
+          FOLDER: docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload generator folder
-          path: 'data'
+          path: 'docs'
 
   deploy:
     needs: pages-directory-listing
