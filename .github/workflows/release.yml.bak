@@ -12,7 +12,7 @@ jobs:
           ref: dummy-data
 
       - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@v2.0.0
+        uses: rajibdpi/github-pages-directory-listing@v2.0.0
         with:
           FOLDER: data
 
