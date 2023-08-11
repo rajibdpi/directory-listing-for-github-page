@@ -14,7 +14,7 @@ jobs:
           ref: dummy-data
 
       - name: Generate Directory Listings
-        uses: rajibdpi/github-page-directory-listing@main
+        uses: rajibdpi/directory-listing-for-github-page@main
         with:
           FOLDER: data
 
