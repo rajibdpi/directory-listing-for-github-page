@@ -1,8 +1,8 @@
 # action.yml
-name: 'Github Pages Directory Listing'
+name: 'Github Directory Listing'
 description: 'Github Action to generate directory listing index for Github Pages'
 
-author: 'jayanta525'
+author: 'rajibdpi'
 branding:
   color: 'green'
   icon: 'upload-cloud'
