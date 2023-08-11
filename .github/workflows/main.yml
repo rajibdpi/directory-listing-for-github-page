@@ -7,7 +7,7 @@ jobs:
     name: Run Actions Template
     steps:
       # To use this repository's private action,
-      # you must check out the repository
+      # you must check out the repository/repos
       - name: Checkout
         uses: actions/checkout@v3
         with:
