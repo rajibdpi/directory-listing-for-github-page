@@ -11,18 +11,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: dummy-data
 
       - name: Generate Directory Listings
         uses: rajibdpi/directory-listing-for-github-page@main
         with:
-          FOLDER: docs
+          FOLDER: data
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload generator folder
-          path: 'docs'
+          path: data
 
   deploy:
     needs: pages-directory-listing
