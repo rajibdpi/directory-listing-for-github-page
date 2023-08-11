@@ -1,5 +1,5 @@
 # action.yml
-name: 'Github Directory Listing'
+name: 'Directory Listing for Github Page'
 description: 'Github Action to generate directory listing index for Github Pages'
 
 author: 'rajibdpi'
