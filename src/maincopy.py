@@ -31,10 +31,9 @@ def main():
         sys.exit()
 
     for dirname, dirnames, filenames in os.walk("."):
-        if not dirnames[0] and filenames[0]==".":
-            if "index.html" in filenames:
-                print("index.html already exists, skipping...")
-            else:
+        if "index.html" in filenames:
+            print("index.html already exists, skipping...")
+        else:
             print("index.html does not exist, generating")
             with open(os.path.join(dirname, "index.html"), "w", encoding="utf-8") as f:
                 f.write(
