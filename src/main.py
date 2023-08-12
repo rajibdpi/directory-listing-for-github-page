@@ -71,21 +71,21 @@ def main():
                 for filename in filenames:
                     if not filename.startswith("."):
                         yield filename
-                    path = dirname == "." and filename or dirname + "/" + filename
-                    f.write(
-                        '<tr class="w-1/4 bg-white border-b hover:bg-gray-50"><th scope="row" class=" py-2 px-2 lg:px-6 font-medium text-gray-900 whitespace-nowrap flex align-middle"><img style="max-width:23px; margin-right:5px" src="'
-                        + get_icon_base64(filename)
-                        + '"/>'
-                        + '<a class="my-auto text-blue-700" href="'
-                        + filename
-                        + '">'
-                        + filename
-                        + "</a></th><td>"
-                        + get_file_size(path)
-                        + "</td><td>"
-                        + get_file_modified_time(path)
-                        + "</td></tr>\n"
-                    )
+                        path = dirname == "." and filename or dirname + "/" + filename
+                        f.write(
+                            '<tr class="w-1/4 bg-white border-b hover:bg-gray-50"><th scope="row" class=" py-2 px-2 lg:px-6 font-medium text-gray-900 whitespace-nowrap flex align-middle"><img style="max-width:23px; margin-right:5px" src="'
+                            + get_icon_base64(filename)
+                            + '"/>'
+                            + '<a class="my-auto text-blue-700" href="'
+                            + filename
+                            + '">'
+                            + filename
+                            + "</a></th><td>"
+                            + get_file_size(path)
+                            + "</td><td>"
+                            + get_file_modified_time(path)
+                            + "</td></tr>\n"
+                        )
                 f.write(
                     "\n".join(
                         [
