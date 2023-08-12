@@ -45,8 +45,8 @@ def main():
                                 + get_icon_base64("o.folder-home")
                                 + '"/>'
                                 + '<a class="my-auto text-blue-700" href="../">../</a></th><td>-</td><td>-</td></tr>'
-                                if dirname != "."
-                                else "",
+                                # if dirname != "."
+                                # else "",
                             ]
                         )
                     )
