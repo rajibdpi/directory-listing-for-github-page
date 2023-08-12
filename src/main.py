@@ -31,25 +31,25 @@ def main():
         sys.exit()
 
     for dirname, dirnames, filenames in os.walk("."):
-        if not dirnames[0] and filenames[0]==".":
+        if dirnames[0] and filenames[0] != ".":
             if "index.html" in filenames:
                 print("index.html already exists, skipping...")
             else:
                 print("index.html does not exist, generating")
                 with open(os.path.join(dirname, "index.html"), "w", encoding="utf-8") as f:
-                f.write(
-                    "\n".join(
-                        [
-                            get_template_head(dirname),
-                            '<tr class="w-2/4 bg-white border-b hover:bg-gray-50"><th scope="row" class=" py-2 px-2 lg:px-6 font-medium text-gray-900 whitespace-nowrap flex align-middle"><img style="max-width:23px; margin-right:5px" src="'
-                            + get_icon_base64("o.folder-home")
-                            + '"/>'
-                            + '<a class="my-auto text-blue-700" href="../">../</a></th><td>-</td><td>-</td></tr>'
-                            if dirname != "."
-                            else "",
-                        ]
+                    f.write(
+                        "\n".join(
+                            [
+                                get_template_head(dirname),
+                                '<tr class="w-2/4 bg-white border-b hover:bg-gray-50"><th scope="row" class=" py-2 px-2 lg:px-6 font-medium text-gray-900 whitespace-nowrap flex align-middle"><img style="max-width:23px; margin-right:5px" src="'
+                                + get_icon_base64("o.folder-home")
+                                + '"/>'
+                                + '<a class="my-auto text-blue-700" href="../">../</a></th><td>-</td><td>-</td></tr>'
+                                if dirname != "."
+                                else "",
+                            ]
+                        )
                     )
-                )
                 # sort dirnames alphabetically
                 # dirnames.sort(key=int)
                 dirnames.sort()
