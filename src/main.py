@@ -41,7 +41,7 @@ def main():
                         "<a class=\"my-auto text-blue-700\" href=\"../\">../</a></th><td>-</td><td>-</td></tr>" if dirname != "." else "",
                         ]))
                 #sort dirnames alphabetically
-                dirnames.sort(key=int])
+                dirnames.sort(key=int)
                 for subdirname in dirnames:
                      if not subdirname.startswith('.'):
                             f.write("<tr class=\"w-1/4 bg-white border-b hover:bg-gray-50\"><th scope=\"row\" class=\" py-2 px-2 lg:px-6 font-medium text-gray-900 whitespace-nowrap flex align-middle\"><img style=\"max-width:23px; margin-right:5px\" src=\"" + get_icon_base64("o.folder") + "\"/>" + "<a class=\"my-auto text-blue-700\" href=\"" + subdirname + "/\">" +
