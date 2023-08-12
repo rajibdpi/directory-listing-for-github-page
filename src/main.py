@@ -35,8 +35,8 @@ def main():
             if "index.html" in filenames:
                 print("index.html already exists, skipping...")
             else:
-            print("index.html does not exist, generating")
-            with open(os.path.join(dirname, "index.html"), "w", encoding="utf-8") as f:
+                print("index.html does not exist, generating")
+                with open(os.path.join(dirname, "index.html"), "w", encoding="utf-8") as f:
                 f.write(
                     "\n".join(
                         [
