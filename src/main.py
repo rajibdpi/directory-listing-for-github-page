@@ -111,7 +111,7 @@ def get_file_modified_time(filepath):
     """
     get file modified time
     """
-    return dt.datetime.fromtimestamp(os.path.getmtime(filepath), tz='Asia/Dhaka').strftime(
+    return dt.datetime.fromtimestamp(os.path.getmtime(filepath)).strftime(
         # "%Y-%m-%d %H:%M:%S"
         "%d-%m-%Y %H:%M:%S"
     )
