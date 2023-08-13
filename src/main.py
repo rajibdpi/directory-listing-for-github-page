@@ -135,7 +135,7 @@ def get_template_foot():
     with open("/src/template/foot.html", "r", encoding="utf-8") as file:
         foot = file.read()
     foot = foot.replace(
-        "{{buildtime}}", "at " + dt.datetime.now(tz='Asia/Dhaka').strftime("%d-%m-%Y %H:%M:%S")
+        "{{buildtime}}", "at " + dt.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         # "{{buildtime}}", "at " + dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     )
     return foot
