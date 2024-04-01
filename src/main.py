@@ -31,7 +31,7 @@ def main():
         sys.exit()
 
     for dirname, dirnames, filenames in os.walk("."):
-        if "index.html" in filenames && ".git" in dirname:
+        if "index.html" in filenames and ".git" in dirname:
             print("index.html already exists, index.html & hidden folder is skipping...")
         else:
             print("index.html does not exist, generating")
